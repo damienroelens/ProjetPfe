@@ -16,9 +16,45 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-window.addEventListener('load',main,false);
+;( function($) {
+	"use strict";
 
-function main(){
+	$( function(){
+		
+		$('nav a').on('click',function(e){
+			e.preventDefault();
+			$('nav a').removeClass('active');
+			var sNomCat = $(this).attr('class');
+			$(this).addClass('active');
+			var sec = $('section')
+			switch(sNomCat)
+				{
+				case 'declaration':
+				  sec.css({
+				  	'-webkit-transform':'translate3d(0,-100%,0)'
+				  });
+				  break;
+				case 'profil':
+				  sec.css({
+				  	'-webkit-transform':'translate3d(0,-200%,0)'
+				  });
+				  break;
+				case 'assistance':
+				  sec.css({
+				  	'-webkit-transform':'translate3d(0,-300%,0)'
+				  });
+				  break;
+				case 'options':
+				  sec.css({
+				  	'-webkit-transform':'translate3d(0,-400%,0)'
+				  });
+				  break;
+				}
+		})
 
-}
+		
+		
+	});
+
+}).call(this,jQuery);
 

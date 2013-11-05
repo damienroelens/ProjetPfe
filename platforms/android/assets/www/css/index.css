@@ -1,115 +1,297 @@
-/*
- * Licensed to the Apache Software Foundation (ASF) under one
- * or more contributor license agreements.  See the NOTICE file
- * distributed with this work for additional information
- * regarding copyright ownership.  The ASF licenses this file
- * to you under the Apache License, Version 2.0 (the
- * "License"); you may not use this file except in compliance
- * with the License.  You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing,
- * software distributed under the License is distributed on an
- * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
- * KIND, either express or implied.  See the License for the
- * specific language governing permissions and limitations
- * under the License.
- */
-* {
-    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
-}
+/* line 17, ../../../../../../Program Files (x86)/Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
 
+/* line 22, ../../../../../../Program Files (x86)/Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1; }
+
+/* line 24, ../../../../../../Program Files (x86)/Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 26, ../../../../../../Program Files (x86)/Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 28, ../../../../../../Program Files (x86)/Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, ../../../../../../Program Files (x86)/Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+/* line 103, ../../../../../../Program Files (x86)/Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+/* line 32, ../../../../../../Program Files (x86)/Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, ../../../../../../Program Files (x86)/Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+/* line 4, ../index.scss */
 body {
-    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
-    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
-    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    background-color:#E4E4E4;
-    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        color-stop(0, #A7A7A7),
-        color-stop(0.51, #E4E4E4)
-    );
-    background-attachment:fixed;
-    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
-    font-size:12px;
-    height:100%;
-    margin:0px;
-    padding:0px;
-    text-transform:uppercase;
-    width:100%;
-}
+  font-family: Helvetica,Arial,'sans-serif'; }
 
-/* Portrait layout (default) */
-.app {
-    background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
-    position:absolute;             /* position in the center of the screen */
-    left:50%;
-    top:50%;
-    height:50px;                   /* text area height */
-    width:225px;                   /* text area width */
-    text-align:center;
-    padding:180px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
-    margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
-                                   /* offset horizontal: half of text area width */
-}
+/* line 7, ../index.scss */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  box-shadow: 0px -10px 40px 0px #5a5 inset;
+  height: 90px;
+  line-height: 90px; }
 
-/* Landscape layout (with min-width) */
-@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
-    .app {
-        background-position:left center;
-        padding:75px 0px 75px 170px;  /* padding-top + padding-bottom + text area = image height */
-        margin:-90px 0px 0px -198px;  /* offset vertical: half of image height */
-                                      /* offset horizontal: half of image width and text area width */
-    }
-}
+/* line 15, ../index.scss */
+nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0px 10px 40px 0px #5a5 inset;
+  overflow: hidden;
+  *zoom: 1;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1; }
+/* line 60, ../../../../../../Program Files (x86)/Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+nav li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  white-space: nowrap;
+  display: inline;
+  float: left;
+  padding-left: 4px;
+  padding-right: 4px; }
+/* line 48, ../../../../../../Program Files (x86)/Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+nav li:first-child, nav li.first {
+  padding-left: 0; }
+/* line 49, ../../../../../../Program Files (x86)/Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+nav li:last-child {
+  padding-right: 0; }
+/* line 50, ../../../../../../Program Files (x86)/Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+nav li.last {
+  padding-right: 0; }
+/* line 21, ../index.scss */
+nav li {
+  box-sizing: border-box;
+  text-align: center;
+  display: inline-block;
+  width: 25%;
+  text-indent: 9999px;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 1px solid #111;
+  margin: 0;
+  padding: 5px 0px; }
+/* line 33, ../index.scss */
+nav li a {
+  padding: 11px 5px;
+  display: block;
+  height: 60px; }
+/* line 38, ../index.scss */
+nav li:first-child {
+  background: transparent url("../img/bullhorn.png") 50% 50% no-repeat; }
+/* line 41, ../index.scss */
+nav li:nth-child(3) {
+  background: transparent url("../img/bubble2.png") 50% 50% no-repeat; }
+/* line 44, ../index.scss */
+nav li:nth-child(2) {
+  background: transparent url("../img/profile.png") 50% 50% no-repeat; }
+/* line 47, ../index.scss */
+nav li:last-child {
+  background: transparent url("../img/settings.png") 50% 50% no-repeat;
+  border: none; }
+/* line 51, ../index.scss */
+nav li:first-child .active {
+  background: transparent url("../img/bullhorn_active.png") 50% 50% no-repeat; }
+/* line 54, ../index.scss */
+nav li:nth-child(3) .active {
+  background: transparent url("../img/bubble2_active.png") 50% 50% no-repeat; }
+/* line 57, ../index.scss */
+nav li:nth-child(2) .active {
+  background: transparent url("../img/profile_active.png") 50% 50% no-repeat; }
+/* line 60, ../index.scss */
+nav li:last-child .active {
+  background: transparent url("../img/settings_active.png") 50% 50% no-repeat; }
 
-h1 {
-    font-size:24px;
-    font-weight:normal;
-    margin:0px;
-    overflow:visible;
-    padding:0px;
-    text-align:center;
-}
+/* line 65, ../index.scss */
+header, nav {
+  background-color: #418659;
+  margin: 0px 0px;
+  z-index: 3; }
 
-.event {
-    border-radius:4px;
-    -webkit-border-radius:4px;
-    color:#FFFFFF;
-    font-size:12px;
-    margin:0px 30px;
-    padding:2px 0px;
-}
+/* line 70, ../index.scss */
+div.view {
+  position: absolute;
+  top: 92px;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch; }
 
-.event.listening {
-    background-color:#333333;
-    display:block;
-}
+/* line 78, ../index.scss */
+section {
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  min-width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-transition: -webkit-transform 0.5s linear;
+  -moz-transition: -moz-transform 0.5s linear;
+  -o-transition: -o-transform 0.5s linear;
+  transition: transform 0.5s linear; }
 
-.event.received {
-    background-color:#4B946A;
-    display:none;
-}
+/* line 93, ../index.scss */
+div.etape {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transform: translate3d(0%, 0, 0);
+  -moz-transform: translate3d(0%, 0, 0);
+  -ms-transform: translate3d(0%, 0, 0);
+  -o-transform: translate3d(0%, 0, 0);
+  transform: translate3d(0%, 0, 0); }
 
-@keyframes fade {
-    from { opacity: 1.0; }
-    50% { opacity: 0.4; }
-    to { opacity: 1.0; }
-}
- 
-@-webkit-keyframes fade {
-    from { opacity: 1.0; }
-    50% { opacity: 0.4; }
-    to { opacity: 1.0; }
-}
- 
-.blink {
-    animation:fade 3000ms infinite;
-    -webkit-animation:fade 3000ms infinite;
-}
+/* line 102, ../index.scss */
+div.etape + div.etape {
+  margin-left: 100%; }
+
+/* line 105, ../index.scss */
+div.etape + div.etape + div.etape {
+  margin-left: 200%; }
+
+/* line 108, ../index.scss */
+div.etape + div.etape + div.etape + div.etape {
+  margin-left: 300%; }
+
+/* line 111, ../index.scss */
+div.etape + div.etape + div.etape + div.etape + div.etape {
+  margin-left: 400%; }
+
+/* line 114, ../index.scss */
+div.etape + div.etape + div.etape + div.etape + div.etape + div.etape {
+  margin-left: 500%; }
+
+/* line 117, ../index.scss */
+div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape {
+  margin-left: 600%; }
+
+/* line 120, ../index.scss */
+div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape {
+  margin-left: 700%; }
+
+/* line 123, ../index.scss */
+div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape {
+  margin-left: 800%; }
+
+/* line 126, ../index.scss */
+div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape {
+  margin-left: 900%; }
+
+/* line 129, ../index.scss */
+div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape {
+  margin-left: 1000%; }
+
+/* line 132, ../index.scss */
+div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape {
+  margin-left: 1100%; }
+
+/* line 135, ../index.scss */
+div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape {
+  margin-left: 1200%; }
+
+/* line 138, ../index.scss */
+div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape {
+  margin-left: 1300%; }
+
+/* line 145, ../index.scss */
+form fieldset {
+  border: 1px solid blue;
+  padding-left: 5px;
+  margin: 10px; }
+/* line 150, ../index.scss */
+form label, form input[type=text], form input [type=tel], form input [type=email], form textarea {
+  display: block;
+  width: 95.5%; }
+
+/* line 155, ../index.scss */
+a {
+  text-decoration: none;
+  color: #FFF; }
+
+/* line 159, ../index.scss */
+p.buttonNext {
+  margin: 0.75em;
+  display: block;
+  background-color: #56ca5d;
+  line-height: 2;
+  text-align: center;
+  border: 1px solid #111; }
+/* line 166, ../index.scss */
+p.buttonNext:hover {
+  box-shadow: 0px 0px 20px 2px #aaa inset;
+  cursor: pointer; }
+
+/* line 171, ../index.scss */
+p.buttonPrev {
+  margin: 0.75em;
+  display: block;
+  background-color: #e54632;
+  line-height: 2;
+  text-align: center;
+  border: 1px solid #111; }
+/* line 178, ../index.scss */
+p.buttonPrev:hover {
+  box-shadow: 0px 0px 20px 2px #aaa inset;
+  cursor: pointer; }
+
+/* line 183, ../index.scss */
+p.resu {
+  padding: 1em;
+  background-color: #bbb;
+  border: 1px solid #aaa;
+  box-shadow: 1px 1px 20px 0px #CCC inset; }
+/* line 188, ../index.scss */
+p.resu:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 20px 0px #FFF inset; }
+
+/* line 194, ../index.scss */
+input[type=submit] {
+  padding: 10px 15px;
+  background: #ccc;
+  border: 1px solid #111;
+  display: block;
+  margin: 1em auto;
+  cursor: pointer;
+  -webkit-appearance: none;
+  width: 90%; }

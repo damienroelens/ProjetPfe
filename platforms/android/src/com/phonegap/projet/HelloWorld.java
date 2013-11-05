@@ -32,7 +32,7 @@ public class HelloWorld extends CordovaActivity
         // Set by <content src="index.html" /> in config.xml
         // super.loadUrl("file:///android_asset/www/index.html")
         super.setIntegerProperty("splashscreen", R.drawable.splash);
-        super.loadUrl(Config.getStartUrl(), 10000);
+        super.loadUrl(Config.getStartUrl(), 3000);
 
     }
 }
