@@ -23,6 +23,22 @@
 		navigator.splashscreen.hide();
 	}
 
+	function onSuccess(position) {
+		window.alert(
+			  'Latitude: '          + position.coords.latitude          + '\n' +
+	          'Longitude: '         + position.coords.longitude         + '\n' +
+	          'Altitude: '          + position.coords.altitude          + '\n' +
+	          'Accuracy: '          + position.coords.accuracy          + '\n' +
+	          'Heading: '           + position.coords.heading           + '\n' +
+	          'Speed: '             + position.coords.speed             + '\n' +
+	          'Timestamp: '         + position.timestamp                + '\n');
+	}
+
+	function getLocation() {
+		window.alert('truc');
+		navigator.geolocation.getCurrentPosition(onSuccess);
+	}
+
 	$( function(){
 
 		$('.buttonNext').on('click',function(){
@@ -39,6 +55,11 @@
 				$currentPanel.css({
 					'-webkit-transform':'translate3d(-100%,0,0)'
 				});
+				console.log($context);
+				if($context == 'declaration'){
+					//TODO connexion a internet pour recup map google
+					getLocation();
+				}
 				
 			}
 			$('.buttonPrev').show();
