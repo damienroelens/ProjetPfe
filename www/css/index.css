@@ -42,11 +42,11 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block; }
 
-/* line 4, ../index.scss */
+/* line 5, ../index.scss */
 body {
   font-family: Helvetica,Arial,'sans-serif'; }
 
-/* line 7, ../index.scss */
+/* line 8, ../index.scss */
 header {
   position: absolute;
   top: 0;
@@ -57,13 +57,15 @@ header {
   height: 90px;
   line-height: 90px; }
 
-/* line 15, ../index.scss */
+/* line 16, ../index.scss */
 nav {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   box-shadow: 0px 10px 40px 0px #5a5 inset;
+  height: 90px;
+  line-height: 90px;
   overflow: hidden;
   *zoom: 1;
   margin: 0;
@@ -90,7 +92,7 @@ nav li:last-child {
 /* line 50, ../../../../../../Program Files (x86)/Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 nav li.last {
   padding-right: 0; }
-/* line 21, ../index.scss */
+/* line 24, ../index.scss */
 nav li {
   box-sizing: border-box;
   text-align: center;
@@ -101,59 +103,58 @@ nav li {
   white-space: nowrap;
   border-right: 1px solid #111;
   margin: 0;
-  padding: 5px 0px; }
-/* line 33, ../index.scss */
+  padding: 0px 0px; }
+/* line 36, ../index.scss */
 nav li a {
-  padding: 11px 5px;
-  display: block;
-  height: 60px; }
-/* line 38, ../index.scss */
+  padding: 0px 0px;
+  display: block; }
+/* line 41, ../index.scss */
 nav li:first-child {
   background: transparent url("../img/bullhorn.png") 50% 50% no-repeat; }
-/* line 41, ../index.scss */
+/* line 44, ../index.scss */
 nav li:nth-child(3) {
   background: transparent url("../img/bubble2.png") 50% 50% no-repeat; }
-/* line 44, ../index.scss */
+/* line 47, ../index.scss */
 nav li:nth-child(2) {
   background: transparent url("../img/profile.png") 50% 50% no-repeat; }
-/* line 47, ../index.scss */
+/* line 50, ../index.scss */
 nav li:last-child {
   background: transparent url("../img/settings.png") 50% 50% no-repeat;
   border: none; }
-/* line 51, ../index.scss */
+/* line 54, ../index.scss */
 nav li:first-child .active {
   background: transparent url("../img/bullhorn_active.png") 50% 50% no-repeat; }
-/* line 54, ../index.scss */
+/* line 57, ../index.scss */
 nav li:nth-child(3) .active {
   background: transparent url("../img/bubble2_active.png") 50% 50% no-repeat; }
-/* line 57, ../index.scss */
+/* line 60, ../index.scss */
 nav li:nth-child(2) .active {
   background: transparent url("../img/profile_active.png") 50% 50% no-repeat; }
-/* line 60, ../index.scss */
+/* line 63, ../index.scss */
 nav li:last-child .active {
   background: transparent url("../img/settings_active.png") 50% 50% no-repeat; }
 
-/* line 65, ../index.scss */
+/* line 68, ../index.scss */
 header, nav {
   background-color: #418659;
   margin: 0px 0px;
   z-index: 3; }
 
-/* line 70, ../index.scss */
+/* line 73, ../index.scss */
 div.view {
   position: absolute;
-  top: 92px;
+  top: 0;
   left: 0;
   right: 0;
-  bottom: 0px;
+  bottom: 0;
   overflow-x: hidden;
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch; }
 
-/* line 78, ../index.scss */
+/* line 81, ../index.scss */
 section {
   position: relative;
-  top: 0;
+  top: 90px;
   right: 0;
   bottom: 0;
   left: 0;
@@ -167,7 +168,7 @@ section {
   -o-transition: -o-transform 0.5s linear;
   transition: transform 0.5s linear; }
 
-/* line 93, ../index.scss */
+/* line 96, ../index.scss */
 div.etape {
   position: absolute;
   top: 0;
@@ -175,80 +176,79 @@ div.etape {
   bottom: 0;
   left: 0;
   width: 100%;
-  -webkit-transform: translate3d(0%, 0, 0);
-  -moz-transform: translate3d(0%, 0, 0);
-  -ms-transform: translate3d(0%, 0, 0);
-  -o-transform: translate3d(0%, 0, 0);
-  transform: translate3d(0%, 0, 0); }
+  -webkit-transition: -webkit-transform 0.5s linear;
+  -moz-transition: -moz-transform 0.5s linear;
+  -o-transition: -o-transform 0.5s linear;
+  transition: transform 0.5s linear; }
 
-/* line 102, ../index.scss */
-div.etape + div.etape {
+/* line 7, ../_mixin.scss */
+.etape:nth-child(2) {
   margin-left: 100%; }
 
-/* line 105, ../index.scss */
-div.etape + div.etape + div.etape {
+/* line 7, ../_mixin.scss */
+.etape:nth-child(3) {
   margin-left: 200%; }
 
-/* line 108, ../index.scss */
-div.etape + div.etape + div.etape + div.etape {
+/* line 7, ../_mixin.scss */
+.etape:nth-child(4) {
   margin-left: 300%; }
 
-/* line 111, ../index.scss */
-div.etape + div.etape + div.etape + div.etape + div.etape {
+/* line 7, ../_mixin.scss */
+.etape:nth-child(5) {
   margin-left: 400%; }
 
-/* line 114, ../index.scss */
-div.etape + div.etape + div.etape + div.etape + div.etape + div.etape {
+/* line 7, ../_mixin.scss */
+.etape:nth-child(6) {
   margin-left: 500%; }
 
-/* line 117, ../index.scss */
-div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape {
+/* line 7, ../_mixin.scss */
+.etape:nth-child(7) {
   margin-left: 600%; }
 
-/* line 120, ../index.scss */
-div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape {
+/* line 7, ../_mixin.scss */
+.etape:nth-child(8) {
   margin-left: 700%; }
 
-/* line 123, ../index.scss */
-div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape {
+/* line 7, ../_mixin.scss */
+.etape:nth-child(9) {
   margin-left: 800%; }
 
-/* line 126, ../index.scss */
-div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape {
+/* line 7, ../_mixin.scss */
+.etape:nth-child(10) {
   margin-left: 900%; }
 
-/* line 129, ../index.scss */
-div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape {
+/* line 7, ../_mixin.scss */
+.etape:nth-child(11) {
   margin-left: 1000%; }
 
-/* line 132, ../index.scss */
-div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape {
+/* line 7, ../_mixin.scss */
+.etape:nth-child(12) {
   margin-left: 1100%; }
 
-/* line 135, ../index.scss */
-div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape {
+/* line 7, ../_mixin.scss */
+.etape:nth-child(13) {
   margin-left: 1200%; }
 
-/* line 138, ../index.scss */
-div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape + div.etape {
+/* line 7, ../_mixin.scss */
+.etape:nth-child(14) {
   margin-left: 1300%; }
 
-/* line 145, ../index.scss */
+/* line 111, ../index.scss */
 form fieldset {
   border: 1px solid blue;
   padding-left: 5px;
   margin: 10px; }
-/* line 150, ../index.scss */
+/* line 116, ../index.scss */
 form label, form input[type=text], form input [type=tel], form input [type=email], form textarea {
   display: block;
   width: 95.5%; }
 
-/* line 155, ../index.scss */
+/* line 121, ../index.scss */
 a {
   text-decoration: none;
   color: #FFF; }
 
-/* line 159, ../index.scss */
+/* line 125, ../index.scss */
 p.buttonNext {
   margin: 0.75em;
   display: block;
@@ -256,36 +256,39 @@ p.buttonNext {
   line-height: 2;
   text-align: center;
   border: 1px solid #111; }
-/* line 166, ../index.scss */
+/* line 132, ../index.scss */
 p.buttonNext:hover {
   box-shadow: 0px 0px 20px 2px #aaa inset;
   cursor: pointer; }
 
-/* line 171, ../index.scss */
+/* line 137, ../index.scss */
 p.buttonPrev {
   margin: 0.75em;
   display: block;
   background-color: #e54632;
   line-height: 2;
   text-align: center;
-  border: 1px solid #111; }
-/* line 178, ../index.scss */
+  border: 1px solid #111;
+  width: 20%;
+  position: absolute;
+  display: none; }
+/* line 147, ../index.scss */
 p.buttonPrev:hover {
   box-shadow: 0px 0px 20px 2px #aaa inset;
   cursor: pointer; }
 
-/* line 183, ../index.scss */
+/* line 152, ../index.scss */
 p.resu {
   padding: 1em;
   background-color: #bbb;
   border: 1px solid #aaa;
   box-shadow: 1px 1px 20px 0px #CCC inset; }
-/* line 188, ../index.scss */
+/* line 157, ../index.scss */
 p.resu:hover {
   cursor: pointer;
   box-shadow: 1px 1px 20px 0px #FFF inset; }
 
-/* line 194, ../index.scss */
+/* line 163, ../index.scss */
 input[type=submit] {
   padding: 10px 15px;
   background: #ccc;

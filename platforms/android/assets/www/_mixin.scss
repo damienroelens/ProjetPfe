@@ -1,0 +1,12 @@
+@function calculateNthChild($nombre){
+	@return ($nombre - 1);
+}
+
+@mixin createHorizontalPages($num){
+	@for $i from 2 through $num{
+		.etape:nth-child(#{$i}){
+			margin-left:calculateNthChild($i)#{0}#{0%};
+			}
+		}
+}
+

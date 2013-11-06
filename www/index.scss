@@ -1,5 +1,6 @@
 @import "compass";
 @import "compass/reset";
+@import "mixin";
 //Jquery mobile ou boilerplate html 5 mobile et phonegap
 body{
 	font-family: Helvetica,Arial,'sans-serif';
@@ -16,6 +17,8 @@ nav{
 	position:absolute;
 	bottom:0; left:0; right:0;
 	box-shadow: 0px 10px 40px 0px #5a5 inset;
+		height:90px;
+		line-height:90px;
 	@include clearfix;
 	@include horizontal-list();
 		& li{
@@ -28,12 +31,12 @@ nav{
 		white-space: nowrap;
 		border-right:1px solid #111;
 		margin:0;
-		padding:5px 0px;
+		padding:0px 0px;
 		
 		& a{
-			padding:11px 5px;
+			padding:0px 0px;
 			display:block;
-			height:60px;
+
 		}
 		&:first-child{
 			background:transparent url('../img/bullhorn.png') 50% 50% no-repeat;
@@ -69,7 +72,7 @@ header,nav{
 }
 div.view{
 	position:absolute;
-	top:92px; left:0; right:0; bottom:0px;
+	top:0; left:0; right:0; bottom:0;
 	overflow-x:hidden;
 	overflow-y:hidden;
 	-webkit-overflow-scrolling:touch;
@@ -77,7 +80,7 @@ div.view{
 }
 section{
 	position:relative;
-	top:0;
+	top:90px;
 	right:0;
 	bottom:0;
 	left:0;
@@ -97,47 +100,10 @@ div.etape{
 	bottom:0;
 	left:0;
 	width: 100%;
-	@include translate3d(0%,0,0);
+	@include transition(compact(transform 0.5s linear));
 }
-div.etape+div.etape{
-	margin-left:100%;
-}
-div.etape+div.etape+div.etape{
-	margin-left:200%;
-}
-div.etape+div.etape+div.etape+div.etape{
-	margin-left:300%;
-}
-div.etape+div.etape+div.etape+div.etape+div.etape{
-	margin-left:400%;
-}
-div.etape+div.etape+div.etape+div.etape+div.etape+div.etape{
-	margin-left:500%;
-}
-div.etape+div.etape+div.etape+div.etape+div.etape+div.etape+div.etape{
-	margin-left:600%;
-}
-div.etape+div.etape+div.etape+div.etape+div.etape+div.etape+div.etape+div.etape{
-	margin-left:700%;
-}
-div.etape+div.etape+div.etape+div.etape+div.etape+div.etape+div.etape+div.etape+div.etape{
-	margin-left:800%;
-}
-div.etape+div.etape+div.etape+div.etape+div.etape+div.etape+div.etape+div.etape+div.etape+div.etape{
-	margin-left:900%;
-}
-div.etape+div.etape+div.etape+div.etape+div.etape+div.etape+div.etape+div.etape+div.etape+div.etape+div.etape{
-	margin-left:1000%;
-}
-div.etape+div.etape+div.etape+div.etape+div.etape+div.etape+div.etape+div.etape+div.etape+div.etape+div.etape+div.etape{
-	margin-left:1100%;
-}
-div.etape+div.etape+div.etape+div.etape+div.etape+div.etape+div.etape+div.etape+div.etape+div.etape+div.etape+div.etape+div.etape{
-	margin-left:1200%;
-}
-div.etape+div.etape+div.etape+div.etape+div.etape+div.etape+div.etape+div.etape+div.etape+div.etape+div.etape+div.etape+div.etape+div.etape{
-	margin-left:1300%;
-}
+
+@include createHorizontalPages(14);
 
 
 
@@ -175,6 +141,9 @@ p.buttonPrev{
 	line-height: 2;
 	text-align: center;
 	border:1px solid #111;
+	width:20%;
+	position:absolute;
+	display:none;
 	&:hover{
 		box-shadow: 0px 0px 20px 2px #aaa inset;
 		cursor:pointer;
