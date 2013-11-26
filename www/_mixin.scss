@@ -5,6 +5,7 @@
 @mixin createHorizontalPages($num){
 	@for $i from 2 through $num{
 		.etape:nth-child(#{$i}){
+			display: inline-block;
 			margin-left:calculateNthChild($i)#{0}#{0%};
 			}
 		}

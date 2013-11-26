@@ -22,6 +22,7 @@ nav{
 	@include clearfix;
 	@include horizontal-list();
 		& li{
+		-webkit-box-sizing: border-box;
 		box-sizing:border-box;
 		text-align: center;
 		display:inline-block;
@@ -71,27 +72,40 @@ header,nav{
 	z-index:3;
 }
 div.view{
-	position:absolute;
+	position:fixed;
 	top:0; left:0; right:0; bottom:0;
 	overflow-x:hidden;
 	overflow-y:hidden;
-	-webkit-overflow-scrolling:touch;
-
+	width:100%;
+	height:100%;
+	margin:90px 0;
+	padding:0;
+	-webkit-box-sizing: border-box;
+	box-sizing:border-box;
 }
 section{
 	position:relative;
-	top:90px;
+	top:0;
 	right:0;
 	bottom:0;
 	left:0;
 	display:block;
-	min-width:100%;
+	width:100%;
 	height:100%;
+	padding:0;
 	overflow-x:hidden;
 	overflow-y:scroll;
-	@include transition(compact(transform 0.5s linear));
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	@include transition(compact(transform 0.2s linear));
 }
 
+#gmap{
+	position:absolute;
+	top:0;
+	width:100%;
+	height:100%;
+}
 
 div.etape{
     position:absolute;
@@ -100,12 +114,14 @@ div.etape{
 	bottom:0;
 	left:0;
 	width: 100%;
-	@include transition(compact(transform 0.5s linear));
+	padding:0;
+	overflow-x:hidden;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	@include transition(compact(transform 0.2s linear));
 }
 
 @include createHorizontalPages(14);
-
-
 
 form{
 	& fieldset{
@@ -116,19 +132,21 @@ form{
 	& label,& input[type=text],& input [type=tel],& input [type=email],& textarea{
 		display:block;
 		width:95.5%;
+		-webkit-appearance: none;
 	}
 }
 a{
 	text-decoration: none;
 	color:#FFF;
 }
-p.buttonNext{
+p.buttonConfirm{
 	margin:0.75em;
 	display:block;
 	background-color: #56ca5d;
 	line-height: 2;
 	text-align: center;
 	border:1px solid #111;
+	margin-bottom: 20px;
 	&:hover{
 		box-shadow: 0px 0px 20px 2px #aaa inset;
 		cursor:pointer;
@@ -149,6 +167,23 @@ p.buttonPrev{
 		cursor:pointer;
 	}
 }
+p.buttonNext{
+	margin:0.75em;
+	display:block;
+	background-color: green;
+	line-height: 2;
+	text-align: center;
+	border:1px solid #111;
+	width:20%;
+	position:absolute;
+	top:0;
+	right:0;
+	display:none;
+	&:hover{
+		box-shadow: 0px 0px 20px 2px #aaa inset;
+		cursor:pointer;
+	}
+}
 p.resu{
 	padding:1em;
 	background-color: #bbb;
@@ -161,14 +196,15 @@ p.resu{
 }
 
 input[type=submit]{
-padding:10px 15px; 
-background:#ccc; 
-border:1px solid #111;
-display:block;
-margin:1em auto;
-cursor:pointer;
--webkit-appearance:none;
-width:90%;
+	padding:10px 15px; 
+	background:#ccc; 
+	border:1px solid #111;
+	display:block;
+	margin:1em auto;
+	cursor:pointer;
+	-webkit-appearance:none;
+	width:90%;
+	margin-bottom: 20px;
 }
 
 

@@ -29,6 +29,7 @@
         <header>
         	<p class="buttonPrev">Etape précédente</p>
 		<h1><a href="../index.html">Constat d'accident</a></h1>
+			<p class='buttonNext'>Confirmer</p>
 	</header>
 	<nav>
 		<ul>
@@ -50,11 +51,11 @@
 		<form action="">
 		<div class="etape confirm">
 			<h2>Introduire une déclaration d'accident</h2>
-			<p class='buttonNext'>Confirmer</p>
+			<p class='buttonConfirm'>Confirmer</p>
 		</div>
 		<div class="etape loca">
 			<h2>Récupération de la position et de la date actuelle</h2>
-			<p class='buttonNext'>Confirmer</p>
+			<div id="gmap"></div>
 		</div>
 		<div class="etape date">
 			<fieldset>
@@ -65,7 +66,6 @@
 			<label for="">Heure :</label>
 			<input type="time">
 			</fieldset>
-			<p class='buttonNext'>Confirmer</p>
 		</div>
 		<div class="etape">
 			<h2>Résumé</h2>
@@ -92,7 +92,6 @@
 					<label for="">Tel</label>
 					<input type="tel">
 				</fieldset>
-			<p class="buttonNext">Etape suivante</p>
 			</div>
 		<div class="etape">
 			<h2>Déclaration</h2>
@@ -112,7 +111,6 @@
 					<label for="">Tel</label>
 					<input type="tel">
 				</fieldset>
-			<p class="buttonNext">Etape suivante</p>
 		</div>
 		<div class="etape">
 			<h2>Déclaration</h2>
@@ -132,7 +130,6 @@
 					<label for="">Tel</label>
 					<input type="tel">
 				</fieldset>
-			<p class="buttonNext">Etape suivante</p>
 		</div>
 		<div class="etape">
 			<h2>Déclaration</h2>
@@ -152,7 +149,6 @@
 					<label for="">Tel</label>
 					<input type="tel">
 				</fieldset>
-			<p class="buttonNext">Etape suivante</p>
 		</div>
 		<div class="etape">
 			<h2>Déclaration</h2>
@@ -172,7 +168,6 @@
 					<label for="">Tel</label>
 					<input type="tel">
 				</fieldset>
-			<p class="buttonNext">Etape suivante</p>
 		</div>
 		<div class="etape">
 			<h2>Déclaration</h2>
@@ -192,7 +187,6 @@
 					<label for="">Tel</label>
 					<input type="tel">
 				</fieldset>
-			<p class="buttonNext">Etape suivante</p>
 		</div>
 		<div class="etape">
 			<h2>Déclaration</h2>
@@ -211,19 +205,15 @@
 					<input type="text">
 					<label for="">Tel</label>
 					<input type="tel">
-				</fieldset>
-			<p class="buttonNext">Etape suivante</p>
-			
+				</fieldset>	
 		</div>
 		
 		<div class="etape circons">
 			<h2>Circontances</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, sed, accusantium ad dolor fugit facilis unde labore odit totam natus beatae error sapiente illum ducimus aut quasi ea nisi amet.</p>
-			<p class="buttonNext">Etape suivante</p>
 		</div>
 		<div class="etape croquis">
 			<h2>Croquis</h2>
-			<p class="buttonNext">Etape suivante</p>
 		</div>
 		<div class="etape photo">
 			<h2>Photo</h2>
@@ -251,7 +241,6 @@
 					<label for="">Tel</label>
 					<input type="tel">
 				</fieldset>
-				<p class="buttonNext">Etape suivante</p>
 			</div>
 			<div class="etape">
 				<fieldset>
@@ -263,7 +252,6 @@
 					<label for="">Pays Immatriculation</label>
 					<input type="text">
 				</fieldset>
-				<p class="buttonNext">Etape suivante</p>
 			</div>
 			<div class="etape">
 				<fieldset>
@@ -281,7 +269,6 @@
 					<label for="">Tel</label>
 					<input type="text">
 				</fieldset>
-				<p class="buttonNext">Etape suivante</p>
 			</div>
 			<div class="etape">
 				<fieldset>
@@ -308,24 +295,29 @@
 		<section id="assistance" class='panel'>
 			<!-- ---------------------Assistance----------------------- -->
 			<form action="">
-			<fieldset>
-				<legend>Contacter l'assistance</legend>
-				<label for="">Nom</label>
-				<input type="text">
-				<label for="">Prénom</label>
-				<input type="text">
-				<label for="">Objet</label>
-				<input type="text">
-				<label for="">Message</label>
-				<textarea name="" id="" cols="20" rows="15"></textarea>
-			</fieldset>
-			<input type="submit">
+			<div class="etape">
+				<fieldset>
+					<legend>Contacter l'assistance</legend>
+					<label for="">Nom</label>
+					<input type="text">
+					<label for="">Prénom</label>
+					<input type="text">
+					<label for="">Objet</label>
+					<input type="text">
+					<label for="">Message</label>
+					<textarea name="" id="" cols="20" rows="15"></textarea>
+				</fieldset>
+				<input type="submit">
+			</div>
 		</form>
 		</section>
 		<section id="options" class="panel">
-			<h2>Options</h2>
+			<div class="etape">
+				<h2>Options</h2>
+			</div>
 		</section>
 	</div>
+		<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDHJ3p-sn1Y5tJGrzH9MF5cbR5sdsDmhfg&amp;sensor=false"></script>
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript" src="js/index.js"></script>

@@ -1,0 +1,838 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"date",
+				"date"
+			],
+			[
+				"oP",
+				"oResponse"
+			],
+			[
+				"ex",
+				"exports"
+			],
+			[
+				"ore",
+				"oRequest"
+			],
+			[
+				"o",
+				"oPost"
+			],
+			[
+				"on",
+				"onSuccess"
+			],
+			[
+				"sNom",
+				"sNomCible"
+			],
+			[
+				"current",
+				"currentTranslate"
+			],
+			[
+				"dib",
+				"d-ib	display: inline-block;"
+			],
+			[
+				"transa",
+				"translate3d"
+			],
+			[
+				"class",
+				"classA"
+			],
+			[
+				"splash",
+				"splashscreen"
+			],
+			[
+				"decla",
+				"declaration"
+			],
+			[
+				"panel",
+				"panelSwitch"
+			],
+			[
+				"assi",
+				"assistance"
+			],
+			[
+				"right",
+				"right:first"
+			],
+			[
+				"white",
+				"white-space"
+			],
+			[
+				"trans",
+				"translate3d"
+			],
+			[
+				"get",
+				"getElementById  (function)"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"box",
+				"box-shadow"
+			],
+			[
+				"Red",
+				"Redirect	Laravel: Redirect::to()"
+			],
+			[
+				"n",
+				"nth-child(  (pseudo-class)"
+			],
+			[
+				"first",
+				"first-child  (pseudo-class)"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"Url",
+				"UrlController"
+			],
+			[
+				"link",
+				"link_to_route"
+			],
+			[
+				"User",
+				"UserController"
+			],
+			[
+				"desc",
+				"description"
+			],
+			[
+				"hist",
+				"historyHasChanged"
+			],
+			[
+				"histo",
+				"history"
+			],
+			[
+				"add",
+				"addClass"
+			],
+			[
+				"z-",
+				"z-index"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"get_the",
+				"get_the_category"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"it",
+				"italic"
+			],
+			[
+				"set",
+				"setTimeout  (function)"
+			],
+			[
+				"progress",
+				"progressMax"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"the_ti",
+				"the_title"
+			],
+			[
+				"template",
+				"template_url"
+			],
+			[
+				"vertical",
+				"vertical-align"
+			],
+			[
+				"black",
+				"black_lozenge"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"the",
+				"the_tags"
+			],
+			[
+				"width",
+				"widthEcran"
+			],
+			[
+				"cat_",
+				"cat_name"
+			],
+			[
+				"the_",
+				"the_time"
+			],
+			[
+				"arc",
+				"arc_year"
+			],
+			[
+				"get_categor",
+				"get_the_category"
+			],
+			[
+				"list_",
+				"wp_list_pages"
+			],
+			[
+				"list",
+				"list_cats"
+			],
+			[
+				"rotat",
+				"rotateX"
+			],
+			[
+				"wa",
+				"w-a	width: auto;"
+			],
+			[
+				"transform-or",
+				"-webkit-transform-origin:   (property)"
+			],
+			[
+				"margintop",
+				"margin-top"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"Op",
+				"OpenSans-Regular"
+			],
+			[
+				"39",
+				"39AD39"
+			],
+			[
+				"vertic",
+				"vertical-align"
+			],
+			[
+				"webkit-tra",
+				"-webkit-transition:   (property)"
+			],
+			[
+				"webtr",
+				"-webkit-transform:   (property)"
+			],
+			[
+				"wektr",
+				"-webkit-transform:   (property)"
+			],
+			[
+				"webkit-trans",
+				"-webkit-transform-style:   (property)"
+			],
+			[
+				"lineh",
+				"line-height"
+			],
+			[
+				"pan",
+				"panTo"
+			],
+			[
+				"aRe",
+				"aResults"
+			],
+			[
+				"gM",
+				"gMarker"
+			],
+			[
+				"aR",
+				"aResults"
+			],
+			[
+				"Geco",
+				"GeocoderStatus"
+			],
+			[
+				"show",
+				"showMeMyPlace"
+			],
+			[
+				"up",
+				"updateGoogleMapPosition"
+			],
+			[
+				"gene",
+				"generateGoogleMap"
+			],
+			[
+				"getPosi",
+				"getPositionError"
+			],
+			[
+				"getposi",
+				"getPositionSuccess"
+			],
+			[
+				"display",
+				"display:block"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"cont",
+				"content"
+			],
+			[
+				"fontstack",
+				"fontStackNav"
+			],
+			[
+				"backgroun",
+				"background-position"
+			],
+			[
+				"backgro",
+				"background-position"
+			],
+			[
+				"back",
+				"background-size"
+			],
+			[
+				"background",
+				"background-size"
+			],
+			[
+				"fi",
+				"first-child  (pseudo-class)"
+			],
+			[
+				"font-s",
+				"font-style"
+			],
+			[
+				"whi",
+				"white-space"
+			],
+			[
+				"fig",
+				"figcaption"
+			],
+			[
+				"verti",
+				"vertical-align"
+			],
+			[
+				"border-ra",
+				"border-radius"
+			],
+			[
+				"fontsta",
+				"fontStackText"
+			],
+			[
+				"line",
+				"line-height"
+			],
+			[
+				"margin-",
+				"margin-bottom"
+			],
+			[
+				"font-",
+				"font-size:   (property)"
+			],
+			[
+				"por",
+				"portefolio_widgets_init"
+			],
+			[
+				"fo",
+				"fontTitre"
+			],
+			[
+				"trombi",
+				"trombiPhotos"
+			],
+			[
+				"over",
+				"overlayOpacity"
+			],
+			[
+				"zI",
+				"zIndexBase"
+			],
+			[
+				"css",
+				"cssPrefix"
+			],
+			[
+				"load",
+				"loadImage"
+			],
+			[
+				"bord",
+				"border-bottom-right-radius"
+			],
+			[
+				"border-bott",
+				"border-bottom-right-radius"
+			],
+			[
+				"text-",
+				"text-decoration"
+			],
+			[
+				"html",
+				"htmlWidth"
+			],
+			[
+				"borderra",
+				"border-top-right-radius"
+			],
+			[
+				"bdrs",
+				"border-radius"
+			],
+			[
+				"bac",
+				"background-repeat"
+			],
+			[
+				"Oliver",
+				"Oliver-Xperiences"
+			],
+			[
+				"backgrou",
+				"background-color"
+			],
+			[
+				"list-sty",
+				"list-style-type"
+			],
+			[
+				"te",
+				"text-indent"
+			],
+			[
+				"Corb",
+				"CorbelBold"
+			],
+			[
+				"border-top",
+				"border-top-left-radius"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"Co",
+				"CorbelBold"
+			],
+			[
+				"marg",
+				"margin-left"
+			],
+			[
+				"margi",
+				"margin-right"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"no",
+				"nowrap"
+			],
+			[
+				"bor",
+				"border-bottom-left-radius"
+			],
+			[
+				"border-bo",
+				"border-bottom-right-radius"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 58.0,
+		"selected_items":
+		[
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Add Channel"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"channel",
+				"Package Control: Add Channel"
+			],
+			[
+				"packa",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 153.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/vdb040/Desktop/RIA/ecto/server/views/index.jade",
+		"/C/Users/vdb040/Desktop/RIA/ecto/posts/youpi.json",
+		"/C/Users/vdb040/Desktop/RIA/ecto/posts/hello-world.json",
+		"/C/Users/vdb040/Desktop/RIA/ecto/server/controllers/public.js",
+		"/C/Users/vdb040/Desktop/RIA/ecto/server/models/post.js",
+		"/C/Users/vdb040/Desktop/RIA/ecto/hello-world.json",
+		"/C/Users/vdb040/Desktop/RIA/ecto/package.json",
+		"/C/Users/vdb040/Desktop/RIA/ecto/server/server.js",
+		"/C/Users/vdb040/Desktop/RIA/ecto/server/core/middlewares.js",
+		"/C/Users/vdb040/Desktop/RIA/ecto/Vagrantfile",
+		"/C/Users/vdb040/Desktop/ProjetPfe/platforms/android/src/com/phonegap/projet/HelloWorld.java",
+		"/C/Users/vdb040/Desktop/ProjetPfe/platforms/android/res/xml/config.xml",
+		"/C/Users/vdb040/Desktop/ProjetPfe/platforms/android/AndroidManifest.xml",
+		"/C/Users/vdb040/Desktop/ProjetPfe/www/_mixins.scss",
+		"/C/Users/vdb040/Desktop/Cours Sass/scss/_mixin.scss",
+		"/C/Users/vdb040/Desktop/ProjetPfe/www/_functions.scss",
+		"/C/Program Files (x86)/wamp/www/Template - PFE/style.scss",
+		"/C/Users/vdb040/Desktop/scroll/js/jquery.scrollTo.js",
+		"/C/Users/vdb040/Desktop/ProjetPfe/www/config.xml",
+		"/C/Users/vdb040/Desktop/ProjetPfe/www/index.scss",
+		"/C/Users/vdb040/Desktop/ProjetPfe/www/js/index.js",
+		"/C/Users/vdb040/Desktop/ProjetPfe/www/css/index.css",
+		"/C/Users/vdb040/Desktop/ProjetPfe/www/index.html",
+		"/C/Users/vdb040/Desktop/ProjetPfe-master/www/js/index.js",
+		"/C/Users/vdb040/Desktop/ProjetPfe/platforms/android/build.xml",
+		"/C/Users/vdb040/Desktop/ProjetPfe-master/www/index.html",
+		"/C/Users/vdb040/Desktop/ProjetPfe-master/www/config.xml",
+		"/C/Users/vdb040/Desktop/ProjetPfe/www/spec/lib/jasmine-1.2.0/jasmine-html.js",
+		"/C/Program Files (x86)/wamp/www/Template - PFE/js/script.js",
+		"/C/Program Files (x86)/wamp/www/Template - PFE/html/decla.html",
+		"/C/Program Files (x86)/wamp/www/Template - PFE/config.xml",
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/mail.php",
+		"/C/Users/vdb040/Desktop/Template - PFE/js/script.js",
+		"/C/Users/vdb040/Desktop/Template - PFE/style.scss",
+		"/C/Users/vdb040/Desktop/Template - PFE/html/decla.html",
+		"/C/Users/vdb040/Desktop/Template - PFE/index.html",
+		"/C/Users/vdb040/Desktop/Template - PFE/html/compte.html",
+		"/C/Users/vdb040/Desktop/Template - PFE/html/assist.html",
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/js/script.js",
+		"/C/Users/vdb040/Desktop/Template - PFE/assist.html",
+		"/C/Program Files (x86)/wamp/www/laravel-touss/app/models/Author.php",
+		"/C/Program Files (x86)/wamp/www/laravel-touss/app/models/Shot.php",
+		"/C/Program Files (x86)/wamp/www/laravel-touss/app/models/Tool.php",
+		"/C/Program Files (x86)/wamp/www/laravel-touss/app/views/layouts/master.blade.php",
+		"/C/Program Files (x86)/wamp/www/laravel-touss/app/views/forms/login.blade.php",
+		"/C/Program Files (x86)/wamp/www/laravel-touss/app/filters.php",
+		"/C/Program Files (x86)/wamp/www/laravel-touss/app/views/test/tools.blade.php",
+		"/C/Program Files (x86)/wamp/www/laravel-touss/app/routes.php",
+		"/C/Program Files (x86)/wamp/www/laravel-touss/app/config/app.php",
+		"/C/Program Files (x86)/wamp/www/laravel-touss/composer.json",
+		"/C/Program Files (x86)/wamp/www/laravel-touss/app/config/auth.php",
+		"/C/Program Files (x86)/wamp/www/laravel-touss/app/controllers/BaseController.php",
+		"/C/Program Files (x86)/wamp/www/laravel-touss/app/database/migrations/2013_10_29_094733_create_pivot_shot_tool_table.php",
+		"/C/Program Files (x86)/wamp/www/laravel-touss/app/views/test/tools.php",
+		"/C/Program Files (x86)/wamp/www/laravel-touss/app/database/migrations/2013_10_29_100628_add_author_id_to_shots.php",
+		"/C/Program Files (x86)/wamp/www/laravel-touss/app/database/migrations/2013_10_29_094159_create_tools_table.php",
+		"/C/Program Files (x86)/wamp/www/laravel-touss/app/database/migrations/2013_10_29_094137_create_shots_table.php",
+		"/C/Program Files (x86)/wamp/www/laravel-touss/app/database/migrations/2013_10_29_094103_create_authors_table.php",
+		"/C/Program Files (x86)/wamp/www/laravel-touss/app/views/user/welcome.blade.php",
+		"/C/Program Files (x86)/wamp/www/laravel-touss/app/database/migrations/2013_10_29_082155_create_users_table.php",
+		"/C/Program Files (x86)/wamp/www/laravel-touss/app/database/seeds/DataBaseSeeder.php",
+		"/C/Program Files (x86)/wamp/www/laravel-touss/app/controllers/HomeController.php",
+		"/C/Program Files (x86)/wamp/www/laravel-master/app/routes.php",
+		"/C/Program Files (x86)/wamp/www/laravel-touss/app/config/database.php",
+		"/C/Program Files (x86)/wamp/www/laravel-touss/app/controllers/UserController.php",
+		"/C/Users/vdb040/Desktop/Template - Portefolio/css/style.scss",
+		"/C/Users/vdb040/Desktop/Template - PFE/config.rb",
+		"/C/Users/vdb040/Desktop/Template - Portefolio/config.rb",
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/style.css",
+		"/C/Program Files (x86)/wamp/www/test/js/script.js",
+		"/C/Program Files (x86)/wamp/www/history/js/script.js",
+		"/C/Program Files (x86)/wamp/www/jquery/js/script.js",
+		"/C/Program Files (x86)/wamp/www/geolocation/js/script.js",
+		"/C/Users/vdb040/Desktop/test/js/script.js",
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/css/styles-ie.css",
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/propos.php",
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/header.php",
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/functions.php",
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/scss/style.scss",
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/scss/_mixin.scss",
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/scss/_mixins.scss",
+		"/C/Program Files (x86)/wamp/www/laravel-master/app/controllers/UrlController.php",
+		"/C/Users/vdb040/Desktop/jquery-cookie-master/jquery.cookie.js",
+		"/C/Program Files (x86)/wamp/www/laravel-adopte/app/routes.php",
+		"/C/Program Files (x86)/wamp/www/laravel-adopte/app/views/user/index.blade.php",
+		"/C/Program Files (x86)/wamp/www/laravel-adopte/app/views/user/show.blade.php",
+		"/C/Program Files (x86)/wamp/www/laravel-adopte/app/views/layout.blade.php",
+		"/C/Program Files (x86)/wamp/www/laravel-adopte/app/controllers/UserController.php",
+		"/C/Program Files (x86)/wamp/www/laravel-adopte/app/controllers/Photocontroller.php",
+		"/C/Program Files (x86)/wamp/www/laravel-adopte/app/models/User.php",
+		"/C/Program Files (x86)/wamp/www/laravel-adopte/app/database/migrations/2013_10_23_103532_create_users_table.php",
+		"/C/Program Files (x86)/wamp/www/laravel-adopte/app/database/seeds/UserTableSeeder.php",
+		"/C/Program Files (x86)/wamp/www/laravel-adopte/app/database/seeds/DatabaseSeeder.php",
+		"/C/Program Files (x86)/wamp/www/laravel-adopte/app/database/migrations/2013_10_23_102430_create_users_table.php",
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/single.php",
+		"/C/Program Files (x86)/wamp/bin/apache/Apache2.2.21/conf/extra/httpd-vhosts.conf",
+		"/C/Program Files (x86)/wamp/bin/apache/Apache2.2.21/conf/httpd.conf",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/C/Program Files (x86)/wamp/www/history/.htaccess",
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/js/min/script.min.js",
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/contact.php",
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/archive.php",
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/category.php",
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/tag.php",
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/date.php",
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/index.php",
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/config.rb",
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/footer.php",
+		"/C/Program Files (x86)/wamp/www/history/index.html",
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/js/slimbox2.js",
+		"/C/Users/vdb040/Documents/Oliver-Xperiences/site/html/contact.html",
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/js/jquery.js",
+		"/C/Users/vdb040/Desktop/exisa1.html",
+		"/C/Program Files (x86)/wamp/www/Porte-folio/Template - Portefolio/js/script.js",
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/index.html",
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/css/style.css",
+		"/C/Program Files (x86)/wamp/www/Porte-folio/Template - Portefolio/css/style.css",
+		"/C/Program Files (x86)/wamp/www/Porte-folio/Template - Portefolio/css/style.scss",
+		"/C/Program Files (x86)/wamp/www/Porte-folio/Template - Portefolio/propos.html",
+		"/C/Program Files (x86)/wamp/www/Porte-folio/Template - Portefolio/contact.html",
+		"/C/Program Files (x86)/wamp/www/Porte-folio/Template - Portefolio/travaux.html",
+		"/C/Program Files (x86)/wamp/www/Porte-folio/Template - Portefolio/index.html",
+		"/C/Program Files (x86)/wamp/www/Porte-folio/Template - Portefolio/js/jquery.js",
+		"/C/Program Files (x86)/wamp/www/Porte-folio/Template - Portefolio/css/styles-ie.css",
+		"/C/Program Files (x86)/wamp/www/Porte-folio/Template - Portefolio/config.rb",
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/page.php",
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/404.php",
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/comments.php"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\"\n",
+			"div.etape+div.etape{\n	@include translate3d(50%,0,0);\n}",
+			"body",
+			"panelSwit",
+			"input",
+			"each",
+			"getCurrentPosition",
+			"form",
+			"form7",
+			"form",
+			"\n	& .progress-bar.ht{\n		width:90%;\n	}",
+			"& .cube-face-front .progress-bar{\n		width:90%;\n	}",
+			"transiti",
+			"');\n",
+			"png",
+			"href",
+			"descrip",
+			"wrapper",
+			"Socialico",
+			"socialico",
+			"binding_dark",
+			"carbon_fibre",
+			"propos",
+			"figcaption",
+			"& ul>li:last-child a{\n		background-color: #111;\n		border-radius: 10px;\n		padding:8px;\n		padding-top:3px;\n		padding-bottom:5px;\n	}",
+			"nth",
+			"black",
+			"$fontStackNav",
+			"work",
+			".contain",
+			"figcaption",
+			"margin-bottom",
+			"figcap",
+			"line-hei",
+			"line 80",
+			"normal",
+			"nav",
+			"20px",
+			"line 68",
+			"line 42",
+			"();\n",
+			"line 48",
+			"register_nav_menu",
+			"after_setup",
+			"block",
+			";\n",
+			"important",
+			"#info",
+			"<label for=\"Prenom\">Votre nom :</label>\n					<input name=\"Prenom\" type=\"text\" id=\"Prenom\" size=\"60\" maxlength=\"40\" value=\"Nom\" tabindex=\"2\"/>",
+			"555",
+			"footer",
+			"94B1D9",
+			"padding-bottom:5px;",
+			";\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 35.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 124.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 197.0,
+	"status_bar_visible": true
+}

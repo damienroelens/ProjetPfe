@@ -94,6 +94,7 @@ nav li.last {
   padding-right: 0; }
 /* line 24, ../index.scss */
 nav li {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   text-align: center;
   display: inline-block;
@@ -104,71 +105,86 @@ nav li {
   border-right: 1px solid #111;
   margin: 0;
   padding: 0px 0px; }
-/* line 36, ../index.scss */
+/* line 37, ../index.scss */
 nav li a {
   padding: 0px 0px;
   display: block; }
-/* line 41, ../index.scss */
+/* line 42, ../index.scss */
 nav li:first-child {
   background: transparent url("../img/bullhorn.png") 50% 50% no-repeat; }
-/* line 44, ../index.scss */
+/* line 45, ../index.scss */
 nav li:nth-child(3) {
   background: transparent url("../img/bubble2.png") 50% 50% no-repeat; }
-/* line 47, ../index.scss */
+/* line 48, ../index.scss */
 nav li:nth-child(2) {
   background: transparent url("../img/profile.png") 50% 50% no-repeat; }
-/* line 50, ../index.scss */
+/* line 51, ../index.scss */
 nav li:last-child {
   background: transparent url("../img/settings.png") 50% 50% no-repeat;
   border: none; }
-/* line 54, ../index.scss */
+/* line 55, ../index.scss */
 nav li:first-child .active {
   background: transparent url("../img/bullhorn_active.png") 50% 50% no-repeat; }
-/* line 57, ../index.scss */
+/* line 58, ../index.scss */
 nav li:nth-child(3) .active {
   background: transparent url("../img/bubble2_active.png") 50% 50% no-repeat; }
-/* line 60, ../index.scss */
+/* line 61, ../index.scss */
 nav li:nth-child(2) .active {
   background: transparent url("../img/profile_active.png") 50% 50% no-repeat; }
-/* line 63, ../index.scss */
+/* line 64, ../index.scss */
 nav li:last-child .active {
   background: transparent url("../img/settings_active.png") 50% 50% no-repeat; }
 
-/* line 68, ../index.scss */
+/* line 69, ../index.scss */
 header, nav {
   background-color: #418659;
   margin: 0px 0px;
   z-index: 3; }
 
-/* line 73, ../index.scss */
+/* line 74, ../index.scss */
 div.view {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   overflow-x: hidden;
   overflow-y: hidden;
-  -webkit-overflow-scrolling: touch; }
+  width: 100%;
+  height: 100%;
+  margin: 90px 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
 
-/* line 81, ../index.scss */
+/* line 86, ../index.scss */
 section {
   position: relative;
-  top: 90px;
+  top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   display: block;
-  min-width: 100%;
+  width: 100%;
   height: 100%;
+  padding: 0;
   overflow-x: hidden;
   overflow-y: scroll;
-  -webkit-transition: -webkit-transform 0.5s linear;
-  -moz-transition: -moz-transform 0.5s linear;
-  -o-transition: -o-transform 0.5s linear;
-  transition: transform 0.5s linear; }
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: -webkit-transform 0.2s linear;
+  -moz-transition: -moz-transform 0.2s linear;
+  -o-transition: -o-transform 0.2s linear;
+  transition: transform 0.2s linear; }
 
-/* line 96, ../index.scss */
+/* line 103, ../index.scss */
+#gmap {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%; }
+
+/* line 110, ../index.scss */
 div.etape {
   position: absolute;
   top: 0;
@@ -176,92 +192,111 @@ div.etape {
   bottom: 0;
   left: 0;
   width: 100%;
-  -webkit-transition: -webkit-transform 0.5s linear;
-  -moz-transition: -moz-transform 0.5s linear;
-  -o-transition: -o-transform 0.5s linear;
-  transition: transform 0.5s linear; }
+  padding: 0;
+  overflow-x: hidden;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: -webkit-transform 0.2s linear;
+  -moz-transition: -moz-transform 0.2s linear;
+  -o-transition: -o-transform 0.2s linear;
+  transition: transform 0.2s linear; }
 
 /* line 7, ../_mixin.scss */
 .etape:nth-child(2) {
+  display: inline-block;
   margin-left: 100%; }
 
 /* line 7, ../_mixin.scss */
 .etape:nth-child(3) {
+  display: inline-block;
   margin-left: 200%; }
 
 /* line 7, ../_mixin.scss */
 .etape:nth-child(4) {
+  display: inline-block;
   margin-left: 300%; }
 
 /* line 7, ../_mixin.scss */
 .etape:nth-child(5) {
+  display: inline-block;
   margin-left: 400%; }
 
 /* line 7, ../_mixin.scss */
 .etape:nth-child(6) {
+  display: inline-block;
   margin-left: 500%; }
 
 /* line 7, ../_mixin.scss */
 .etape:nth-child(7) {
+  display: inline-block;
   margin-left: 600%; }
 
 /* line 7, ../_mixin.scss */
 .etape:nth-child(8) {
+  display: inline-block;
   margin-left: 700%; }
 
 /* line 7, ../_mixin.scss */
 .etape:nth-child(9) {
+  display: inline-block;
   margin-left: 800%; }
 
 /* line 7, ../_mixin.scss */
 .etape:nth-child(10) {
+  display: inline-block;
   margin-left: 900%; }
 
 /* line 7, ../_mixin.scss */
 .etape:nth-child(11) {
+  display: inline-block;
   margin-left: 1000%; }
 
 /* line 7, ../_mixin.scss */
 .etape:nth-child(12) {
+  display: inline-block;
   margin-left: 1100%; }
 
 /* line 7, ../_mixin.scss */
 .etape:nth-child(13) {
+  display: inline-block;
   margin-left: 1200%; }
 
 /* line 7, ../_mixin.scss */
 .etape:nth-child(14) {
+  display: inline-block;
   margin-left: 1300%; }
 
-/* line 111, ../index.scss */
+/* line 127, ../index.scss */
 form fieldset {
   border: 1px solid blue;
   padding-left: 5px;
   margin: 10px; }
-/* line 116, ../index.scss */
+/* line 132, ../index.scss */
 form label, form input[type=text], form input [type=tel], form input [type=email], form textarea {
   display: block;
-  width: 95.5%; }
+  width: 95.5%;
+  -webkit-appearance: none; }
 
-/* line 121, ../index.scss */
+/* line 138, ../index.scss */
 a {
   text-decoration: none;
   color: #FFF; }
 
-/* line 125, ../index.scss */
-p.buttonNext {
+/* line 142, ../index.scss */
+p.buttonConfirm {
   margin: 0.75em;
   display: block;
   background-color: #56ca5d;
   line-height: 2;
   text-align: center;
-  border: 1px solid #111; }
-/* line 132, ../index.scss */
-p.buttonNext:hover {
+  border: 1px solid #111;
+  margin-bottom: 20px; }
+/* line 150, ../index.scss */
+p.buttonConfirm:hover {
   box-shadow: 0px 0px 20px 2px #aaa inset;
   cursor: pointer; }
 
-/* line 137, ../index.scss */
+/* line 155, ../index.scss */
 p.buttonPrev {
   margin: 0.75em;
   display: block;
@@ -272,23 +307,41 @@ p.buttonPrev {
   width: 20%;
   position: absolute;
   display: none; }
-/* line 147, ../index.scss */
+/* line 165, ../index.scss */
 p.buttonPrev:hover {
   box-shadow: 0px 0px 20px 2px #aaa inset;
   cursor: pointer; }
 
-/* line 152, ../index.scss */
+/* line 170, ../index.scss */
+p.buttonNext {
+  margin: 0.75em;
+  display: block;
+  background-color: green;
+  line-height: 2;
+  text-align: center;
+  border: 1px solid #111;
+  width: 20%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none; }
+/* line 182, ../index.scss */
+p.buttonNext:hover {
+  box-shadow: 0px 0px 20px 2px #aaa inset;
+  cursor: pointer; }
+
+/* line 187, ../index.scss */
 p.resu {
   padding: 1em;
   background-color: #bbb;
   border: 1px solid #aaa;
   box-shadow: 1px 1px 20px 0px #CCC inset; }
-/* line 157, ../index.scss */
+/* line 192, ../index.scss */
 p.resu:hover {
   cursor: pointer;
   box-shadow: 1px 1px 20px 0px #FFF inset; }
 
-/* line 163, ../index.scss */
+/* line 198, ../index.scss */
 input[type=submit] {
   padding: 10px 15px;
   background: #ccc;
@@ -297,4 +350,5 @@ input[type=submit] {
   margin: 1em auto;
   cursor: pointer;
   -webkit-appearance: none;
-  width: 90%; }
+  width: 90%;
+  margin-bottom: 20px; }
