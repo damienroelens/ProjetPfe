@@ -4,21 +4,40 @@
 //Jquery mobile ou boilerplate html 5 mobile et phonegap
 body{
 	font-family: Helvetica,Arial,'sans-serif';
+	background-color: #222;
+	color:#efe;
+}
+*{
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
 }
 header{
 	position:absolute;
 	top:0; left:0; right:0;
 	text-align: center;
-	box-shadow: 0px -10px 40px 0px #5a5 inset;
+	background-color: #fff22d;
+
+	border-bottom: 1px solid #a90;
+	box-shadow: 0px 10px 40px 0px #777;
 	height:90px;
 	line-height: 90px;
+	margin:0px 0px;
+	z-index:3;
+	& h1{
+		font-size: 2em;
+		color:#444;
+		font-weight: bold;		
+	}
 }
 nav{
 	position:absolute;
-	bottom:0; left:0; right:0;
-	box-shadow: 0px 10px 40px 0px #5a5 inset;
-		height:90px;
-		line-height:90px;
+	top:90px; left:0; right:0;
+	height:70px;
+	line-height:70px;
+	margin:0px 0px;
+	background-color: #0099d7;
+
+	z-index:2;
 	@include clearfix;
 	@include horizontal-list();
 		& li{
@@ -37,6 +56,9 @@ nav{
 		& a{
 			padding:0px 0px;
 			display:block;
+			&:active{
+				box-shadow: 0px 0px 20px 2px #fff22d inset;
+			}
 
 		}
 		&:first-child{
@@ -66,22 +88,20 @@ nav{
 		}
 	}
 }
-header,nav{
-	background-color: #418659;
-	margin:0px 0px;
-	z-index:3;
-}
 div.view{
 	position:fixed;
 	top:0; left:0; right:0; bottom:0;
 	overflow-x:hidden;
 	overflow-y:hidden;
+	-webkit-overflow-scrolling: touch;
+	-webkit-backface-visibility: hidden;
 	width:100%;
 	height:100%;
-	margin:90px 0;
+	margin:160px 0 0;
 	padding:0;
 	-webkit-box-sizing: border-box;
 	box-sizing:border-box;
+	font-size:1.5em;
 }
 section{
 	position:relative;
@@ -98,6 +118,9 @@ section{
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	@include transition(compact(transform 0.2s linear));
+	background-color: #222;
+
+	border:1px solid #000;
 }
 
 #gmap{
@@ -111,10 +134,11 @@ div.etape{
     position:absolute;
 	top:0;
 	right:0;
-	bottom:0;
+	bottom:160px;
 	left:0;
 	width: 100%;
 	padding:0;
+	overflow-y:scroll;
 	overflow-x:hidden;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
@@ -128,60 +152,99 @@ form{
 		border:1px solid blue;
 		padding-left:5px;
 		margin:10px;
+		padding:15px;
 	}
-	& label,& input[type=text],& input [type=tel],& input [type=email],& textarea{
+	& label,& input[type=text],& input[type=tel],& input[type=date],& input[type=time],& input[type=email],& textarea{
 		display:block;
-		width:95.5%;
+		width:90%;
 		-webkit-appearance: none;
+		height:60px;
+		margin:1em;
+	}
+	& input[type=text],& input[type=tel],& input[type=date],& input[type=time],& input[type=email]{
+		margin-top:5px;
+		padding-top: 0;
+	}
+	& label{
+		margin-bottom:5px;
+		padding-bottom: 0;
+		height:30px;
+		line-height: 30px;
+	}
+	& textarea{
+		height:200px;
+		margin-top:5px;
+		padding-top: 0;
 	}
 }
 a{
 	text-decoration: none;
-	color:#FFF;
+	color:#efe;
 }
 p.buttonConfirm{
+	border-radius: 5px;
 	margin:0.75em;
 	display:block;
-	background-color: #56ca5d;
-	line-height: 2;
+	background-color: #561f8f;
 	text-align: center;
 	border:1px solid #111;
 	margin-bottom: 20px;
+	height:50px;
+	line-height:50px;
 	&:hover{
 		box-shadow: 0px 0px 20px 2px #aaa inset;
 		cursor:pointer;
 	}
 }
 p.buttonPrev{
+	border-radius: 5px;
+	border-top-left-radius: 40px 17px ;
+	border-bottom-left-radius: 40px 17px;
 	margin:0.75em;
 	display:block;
-	background-color: #e54632;
+	background-color: #ccc11a;
 	line-height: 2;
 	text-align: center;
 	border:1px solid #111;
-	width:20%;
+	width:15%;
+	height: 60px;
+	line-height: 60px;
+	color:#777;
+	font-weight: bold;
 	position:absolute;
 	display:none;
-	&:hover{
-		box-shadow: 0px 0px 20px 2px #aaa inset;
-		cursor:pointer;
+	-webkit-appearance: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+	&:active{
+		box-shadow: 0px 0px 20px 2px #0099d7 inset;
 	}
 }
 p.buttonNext{
+	border-radius: 5px;
+	background-color: #eee11c;
+	border-top-right-radius: 40px 17px ;
+	border-bottom-right-radius: 40px 17px;
+	box-shadow: 0px 0px 10px 0px #999 inset;
 	margin:0.75em;
 	display:block;
-	background-color: green;
 	line-height: 2;
 	text-align: center;
 	border:1px solid #111;
-	width:20%;
+	width:15%;
+	height: 60px;
+	line-height: 60px;
+	color:#777;
+	font-weight: bold;
 	position:absolute;
 	top:0;
 	right:0;
 	display:none;
-	&:hover{
-		box-shadow: 0px 0px 20px 2px #aaa inset;
-		cursor:pointer;
+	-webkit-appearance: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+	&:active{
+		box-shadow: 0px 0px 20px 2px #0099d7 inset;
 	}
 }
 p.resu{
@@ -196,6 +259,7 @@ p.resu{
 }
 
 input[type=submit]{
+	border-radius: 5px;
 	padding:10px 15px; 
 	background:#ccc; 
 	border:1px solid #111;
@@ -205,6 +269,10 @@ input[type=submit]{
 	-webkit-appearance:none;
 	width:90%;
 	margin-bottom: 20px;
+	height:50px;
 }
-
-
+input, textarea{
+	-webkit-user-modify: read-write-plaintext-only;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    outline-style: none;
+}

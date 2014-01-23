@@ -37,10 +37,6 @@
 		disableDefaultUI: true,
 		mapTypeId: google.maps.MapTypeId.ROADMAP
 	} );
-	
-	setTimeout(function(){
-		document.addEventListener('deviceready',onDeviceReady,false);		
-			},2000);
 	};
 	//Creation de la carte google
 	function fillInfo(pos){
@@ -78,13 +74,48 @@
 	}
 
 	function onErrors(errors){
-		window.alert('erreur'+errors);
+		window.alert('Erreur : '+errors.message);
 	}
 
 	function getLocation() {
-		navigator.geolocation.getCurrentPosition(onSuccess,onErrors);
+		navigator.geolocation.getCurrentPosition(onSuccess,onErrors,{
+		  timeout: 20000,
+		  maximumAge: 20000
+		});
 	}
 	function onDeviceReady() {
+		if (window.localStorage.getItem('allDonn')){
+			//TODO completition profil
+			var allArr = JSON.parse(window.localStorage.getItem('allDonn'));
+			var proprio = allArr.arrDonn;
+			$('.prop fieldset input:nth-child(3)').val(proprio.nom);
+			$('.prop fieldset input:nth-child(5)').val(proprio.prenom);
+			$('.prop fieldset input:nth-child(7)').val(proprio.adresse);
+			$('.prop fieldset input:nth-child(9)').val(proprio.postal);
+			$('.prop fieldset input:nth-child(11)').val(proprio.pays);
+			$('.prop fieldset input:nth-child(13)').val(proprio.tel);
+			var vehicule = allArr.arrVehi;
+			$('.vehi fieldset input:nth-child(3)').val(vehicule.marque);
+			$('.vehi fieldset input:nth-child(5)').val(vehicule.numimm);
+			$('.vehi fieldset input:nth-child(7)').val(vehicule.paysimm);
+			var assur = allArr.arrAssu;
+			$('.assu fieldset input:nth-child(3)').val(assur.nomas);
+			$('.assu fieldset input:nth-child(5)').val(assur.numcont);
+			$('.assu fieldset input:nth-child(7)').val(assur.numcart);
+			$('.assu fieldset input:nth-child(9)').val(assur.agence);
+			$('.assu fieldset input:nth-child(11)').val(assur.adresseas);
+			$('.assu fieldset input:nth-child(13)').val(assur.telas);
+			var conduc = allArr.arrCond;
+			$('.condu fieldset input:nth-child(3)').val(conduc.nomco);
+			$('.condu fieldset input:nth-child(5)').val(conduc.prenomco);
+			$('.condu fieldset input:nth-child(7)').val(conduc.naissance);
+			$('.condu fieldset input:nth-child(9)').val(conduc.adresseco);
+			$('.condu fieldset input:nth-child(11)').val(conduc.telco);
+			$('.condu fieldset input:nth-child(13)').val(conduc.numperm);
+			$('.condu fieldset input:nth-child(15)').val(conduc.typeperm);
+		} else {
+			//TODO Redirect vers profil
+		}
 		navigator.splashscreen.hide();
 	}
 
@@ -119,14 +150,53 @@
 		});
 
 		$('.buttonConfirm').on('click',function(){
-				$('#declaration div.etape').css({
-					'-webkit-transform':'translateX(-100%)'
-				});
-				//TODO verifier connexion a internet pour recup map google
-				getLocation();
+			$('#declaration div.etape').css({
+				'-webkit-transform':'translateX(-100%)'
+			});
+			//TODO verifier connexion a internet pour recup map google
+			getLocation();
 			$('.buttonPrev').show();
 			$('.buttonNext').show();
 
+		});
+
+		$('#profil input[type=submit]').on("click",function(e){
+			e.preventDefault();
+			var arrAll = {
+					"arrDonn" : {
+					"nom": $('.prop fieldset input:nth-child(3)').val(),
+					"prenom": $('.prop fieldset input:nth-child(5)').val(),
+					"adresse": $('.prop fieldset input:nth-child(7)').val(),
+					"postal": $('.prop fieldset input:nth-child(9)').val(),
+					"pays": $('.prop fieldset input:nth-child(11)').val(),
+					"tel": $('.prop fieldset input:nth-child(13)').val()
+					},
+					"arrVehi" : {
+					"marque": $('.vehi fieldset input:nth-child(3)').val(),
+					"numimm": $('.vehi fieldset input:nth-child(5)').val(),
+					"paysimm": $('.vehi fieldset input:nth-child(7)').val()
+					},
+					"arrAssu" : {
+					"nomas": $('.assu fieldset input:nth-child(3)').val(),
+					"numcont": $('.assu fieldset input:nth-child(5)').val(),
+					"numcart": $('.assu fieldset input:nth-child(7)').val(),
+					"agence": $('.assu fieldset input:nth-child(9)').val(),
+					"adresseas": $('.assu fieldset input:nth-child(11)').val(),
+					"telas": $('.assu fieldset input:nth-child(13)').val()
+					},
+					"arrCond" : {
+					"nomco": $('.condu fieldset input:nth-child(3)').val(),
+					"prenomco": $('.condu fieldset input:nth-child(5)').val(),
+					"naissance": $('.condu fieldset input:nth-child(7)').val(),
+					"adresseco": $('.condu fieldset input:nth-child(9)').val(),
+					"telco": $('.condu fieldset input:nth-child(11)').val(),
+					"numperm": $('.condu fieldset input:nth-child(13)').val(),
+					"typeperm": $('.condu fieldset input:nth-child(15)').val()
+					}
+					};
+
+			window.localStorage.setItem("allDonn",JSON.stringify(arrAll));
+			window.alert('Données enregistrées !')
 		});
 
 		$('.buttonPrev').on('click',function(){
@@ -254,6 +324,10 @@
 		});
 		gGeocoder = new google.maps.Geocoder();
 		generateGoogleMap();
+		setTimeout(function(){
+		document.addEventListener('deviceready',onDeviceReady,false);		
+			},2000);
+
 	});
 
 }).call(this,jQuery);

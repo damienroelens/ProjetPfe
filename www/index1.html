@@ -27,16 +27,16 @@
     </head>
     <body>
         <header>
-        	<p class="buttonPrev">Etape précédente</p>
-		<h1><a href="../index.html">Constat d'accident</a></h1>
-			<p class='buttonNext'>Confirmer</p>
+        	<p class="buttonPrev" ontouchstart="return true;">Précédent</p>
+			<h1>Constat d'accident</h1>
+			<p class='buttonNext' ontouchstart="return true;">Suivant</p>
 	</header>
 	<nav>
 		<ul>
-			<li><a class='declaration' href="#" class="active">Déclaration</a></li>
-			<li><a class='profil' href="./compte.html">Profil</a></li>
-			<li><a class='assistance' href="./assist.html">Assistance</a></li>
-			<li><a class='options' href="#">Options</a></li>
+			<li><a ontouchstart="return true;" class='declaration' href="#" class="active">Déclaration</a></li>
+			<li><a ontouchstart="return true;" class='profil' href="./compte.html">Profil</a></li>
+			<li><a ontouchstart="return true;" class='assistance' href="./assist.html">Assistance</a></li>
+			<li><a ontouchstart="return true;" class='options' href="#">Options</a></li>
 		</ul>
 	</nav>
 	<div class='view'>
@@ -225,7 +225,7 @@
 
 			<!-- ---------------------Profil----------------------- -->
 			<form action="">
-			<div class="etape">
+			<div class="etape prop">
 				<fieldset>
 					<legend>Propriétaire</legend>
 					<label for="">Nom</label>
@@ -235,42 +235,42 @@
 					<label for="">Adresse</label>
 					<input type="text">
 					<label for="">Code Postal</label>
-					<input type="text">
+					<input type="tel">
 					<label for="">Pays</label>
 					<input type="text">
 					<label for="">Tel</label>
 					<input type="tel">
 				</fieldset>
 			</div>
-			<div class="etape">
+			<div class="etape vehi">
 				<fieldset>
 					<legend>Véhicule</legend>
 					<label for="">Marque/Type</label>
 					<input type="text">
 					<label for="">N°Immatriculation</label>
-					<input type="text">
+					<input type="tel">
 					<label for="">Pays Immatriculation</label>
 					<input type="text">
 				</fieldset>
 			</div>
-			<div class="etape">
+			<div class="etape assu">
 				<fieldset>
 					<legend>Société d'assurance</legend>
 					<label for="">Nom</label>
 					<input type="text">
 					<label for="">N° de contrat</label>
-					<input type="text">
+					<input type="tel">
 					<label for="">N° carte verte</label>
-					<input type="text">
+					<input type="tel">
 					<label for="">Agence ou courtier</label>
 					<input type="text">
 					<label for="">Adresse</label>
 					<input type="text">
 					<label for="">Tel</label>
-					<input type="text">
+					<input type="tel">
 				</fieldset>
 			</div>
-			<div class="etape">
+			<div class="etape condu">
 				<fieldset>
 					<legend>Conducteur</legend>
 					<label for="">Nom</label>
@@ -282,13 +282,13 @@
 					<label for="">Adresse</label>
 					<input type="text">
 					<label for="">Tel</label>
-					<input type="text">
+					<input type="tel">
 					<label for="">N° permis</label>
-					<input type="text">
+					<input type="tel">
 					<label for="">Type permis</label>
 					<input type="text">
 				</fieldset>
-				<input type="submit">
+				<input type="submit" value="envoyer">
 			</div>
 		</form>
 		</section>
